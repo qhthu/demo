@@ -10,26 +10,26 @@ package demo;
  * @author quach
  */
 public class Demo {
-    private final int a;
-    private final int b;
+    private final int numA;
+    private final int numB;
 
-    public Demo(int a, int b) {
-        this.a = a;
-        this.b = b;
+    public Demo(int numA, int numB) {
+        this.numA = numA;
+        this.numB = numB;
     }
 
-    public int getA() {
-        return a;
+    public int getNumA() {
+        return numA;
     }
 
-    public int getB() {
-        return b;
+    public int getNumB() {
+        return numB;
     }
 
     public static void main(String[] args) {
 
         Demo d = new Demo(10, 20);
-        System.out.println(d.a);
+        System.out.println(d.numA);
        
     }
 
