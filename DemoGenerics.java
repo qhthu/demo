@@ -45,6 +45,25 @@ class List extends ListName<String, String> {
 
 }
 
+class ListItem<K, V, A> extends ListName<K, V> {
+
+    private A age;
+
+    public ListItem(A age, K key, V value) {
+        super(key, value);
+        this.age = age;
+    }
+
+    public A getAge() {
+        return age;
+    }
+
+    public void setAge(A age) {
+        this.age = age;
+    }
+
+}
+
 public class DemoGenerics {
 
     public static void main(String[] args) {
@@ -56,6 +75,11 @@ public class DemoGenerics {
 
         System.out.println("Ho: " + list.getKey());
         System.out.println("Ten: " + list.getValue());
+
+        ListItem<String, String, Integer> item = new ListItem<>(20, "Quach", "Hong Thu");
+        System.out.println("Ho: " + item.getKey());
+        System.out.println("Ten: " + item.getValue());
+        System.out.println("Tuoi: " + item.getAge());
     }
 
 }
