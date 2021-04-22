@@ -11,36 +11,36 @@ package demo;
  */
 public class Demo {
 
-    private int a;
-    private int b;
+    private int numA;
+    private int numB;
 
-    public Demo(int a, int b) {
-        this.a = a;
-        this.b = b;
+    public Demo(int numA, int numB) {
+        this.numA = numA;
+        this.numB = numB;
     }
 
-    public int getA() {
-        return a;
+    public int getNumA() {
+        return numA;
     }
 
-    public int getB() {
-        return b;
+    public void setNumA(int numA) {
+        this.numA = numA;
     }
 
-    public void setA(int a) {
-        this.a = a;
+    public int getNumB() {
+        return numB;
     }
 
-    public void setB(int b) {
-        this.b = b;
+    public void setNumB(int numB) {
+        this.numB = numB;
     }
 
     public static void main(String[] args) {
 
         Demo d = new Demo(10, 20);
-        System.out.println(d.a);
-        d.setA(100);
-        System.out.println(d.a);
+        System.out.println(d.numA);
+        d.setNumA(100);
+        System.out.println(d.numA);
 
     }
 
