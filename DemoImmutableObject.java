@@ -9,7 +9,7 @@ package demo;
  *
  * @author quach
  */
-public class Demo {
+public class DemoImmutableObject {
     private final int numA;
     private final int numB;
 
@@ -28,7 +28,7 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        Demo d = new Demo(10, 20);
+        DemoImmutableObject d = new DemoImmutableObject(10, 20);
         System.out.println(d.numA);
        
     }
