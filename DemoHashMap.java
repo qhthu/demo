@@ -53,7 +53,7 @@ public class DemoHashMap {
         name1.setTen("Mai Anh");
         hashObj.put(2, name1);
         
-                Name name2 = new Name("", "");
+        Name name2 = new Name("", "");
         name2.setHo("Vo Thi");
         name2.setTen("Hong Nhung");
         hashObj.put(3, name2);
