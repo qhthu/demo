@@ -13,7 +13,7 @@ public class DemoImmutableObject {
     private final int numA;
     private final int numB;
 
-    public Demo(int numA, int numB) {
+    public DemoImmutableObject(int numA, int numB) {
         this.numA = numA;
         this.numB = numB;
     }
