@@ -5,35 +5,40 @@
  */
 package demo;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 /**
  *
  * @author quach
  */
 class Name {
 
-    private String ho;
-    private String ten;
+    private String firstName;
+    private String lastName;
 
-    public Name(String ho, String ten) {
-        this.ho = ho;
-        this.ten = ten;
+    public Name(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-    public String getHo() {
-        return ho;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setHo(String ho) {
-        this.ho = ho;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getTen() {
-        return ten;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setTen(String ten) {
-        this.ten = ten;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
+
 
 }
 
@@ -44,31 +49,29 @@ public class DemoHashMap {
 
         HashMap<Integer, Name> hashObj = new HashMap<>();
         Name name = new Name("", "");
-        name.setHo("Quach");
-        name.setTen("Hong Thu");
+        name.setFirstName("Quach");
+        name.setLastName("Hong Thu");
         hashObj.put(1, name);
 
         Name name1 = new Name("", "");
-        name1.setHo("Ha Thi");
-        name1.setTen("Mai Anh");
+        name1.setFirstName("Ha Thi");
+        name1.setLastName("Mai Anh");
         hashObj.put(2, name1);
-        
+
         Name name2 = new Name("", "");
-        name2.setHo("Vo Thi");
-        name2.setTen("Hong Nhung");
+        name2.setFirstName("Vo Thi");
+        name2.setLastName("Hong Nhung");
         hashObj.put(3, name2);
-        
-        
+
         hashObj.remove(3);
-        
-        
+
         hashObj.replace(1, name1);
-        
+
         Iterator<Map.Entry<Integer, Name>> iterator = hashObj.entrySet().iterator();
 
         while (iterator.hasNext()) {
             Name n = (Name) iterator.next().getValue();
-            System.out.println(n.getHo() + " " + n.getTen());
+            System.out.println(n.getFirstName()+ " " + n.getLastName());
         }
 
     }
