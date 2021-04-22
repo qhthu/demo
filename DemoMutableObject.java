@@ -9,12 +9,12 @@ package demo;
  *
  * @author quach
  */
-public class Demo {
+public class DemoMutableObject {
 
     private int numA;
     private int numB;
 
-    public Demo(int numA, int numB) {
+    public DemoMutableObject(int numA, int numB) {
         this.numA = numA;
         this.numB = numB;
     }
@@ -37,7 +37,7 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        Demo d = new Demo(10, 20);
+        DemoMutableObject d = new DemoMutableObject(10, 20);
         System.out.println(d.numA);
         d.setNumA(100);
         System.out.println(d.numA);
